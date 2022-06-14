@@ -22,19 +22,19 @@ let PriceNoDiscount = (kmToCover * 0.21);
 console.log(PriceNoDiscount)
 
 let PriceDiscount =('')
-let Price =('') 
+let Price =('')
 
 if (isNaN(userAge) == true){
     alert(`l'età da lei indicata non è valida`)
 } else {
     if( userAge < 18){
         PriceDiscount=((PriceNoDiscount * 20 ) / 100)
-        Price=( PriceNoDiscount - PriceDiscount )
+        Price=( PriceNoDiscount - PriceDiscount ).toFixed(2)
     }else if(userAge > 65){
         PriceDiscount=((PriceNoDiscount * 40 ) / 100)
-        Price=( PriceNoDiscount - PriceDiscount )
+        Price=( PriceNoDiscount - PriceDiscount ).toFixed(2)
     }else{
-        Price=PriceNoDiscount
+        Price=PriceNoDiscount.toFixed(2)
     }
 }
 
