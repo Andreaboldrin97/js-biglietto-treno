@@ -6,7 +6,7 @@ console.log(userName);
 document.getElementById('user_name').innerHTML = userName;
 
 //cro una var per chiedere l'età dell'utente
-let userAge = parseInt(prompt(`benvenuto signor ${userName} , in base all'età ci sono degli sconti mi dica la sua`));
+let userAge = parseInt(prompt(`benvenuto/a signor/a ${userName} , in base all'età ci sono degli sconti mi dica la sua`));
 console.log(userAge);
 document.getElementById('user-age').innerHTML = userAge;
 
