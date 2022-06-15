@@ -26,6 +26,8 @@ let Price ;
 
 if (isNaN(userAge) == true){
     alert(`l'età da lei indicata non è valida`);
+} else if (isNaN(kmToCover) == true){
+    alert(`i km da lei indicati non sono validi`);
 } else {
     if( userAge < 18){
         PriceDiscount=((PriceNoDiscount * 20 ) / 100);
